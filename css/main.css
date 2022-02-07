@@ -1,0 +1,172 @@
+body{
+   background-color: rgb(255, 212, 128);
+   margin:0px;
+}
+h1{
+   font-family: "Papyrus", fantasy;
+   font-size: 30px;
+   text-align: center;
+   position: relative;
+   bottom: 40px;
+}
+#logo{/*moves the logo to the top left*/
+   position: relative;
+   bottom: 300px;
+   background-image: url(../images/Inscriptions.png);
+   background-size: cover;
+   border-radius:50% 50% 50% 50%;
+   width: 75px;
+   height:75px;
+   border: 2px inset black;
+}
+.banner{/*banner formatting*/
+   background-image: url(../images/The_Fellowship.jpg);
+   background-size: cover;
+   height: 300px;
+   width:  100%;
+   object-fit: contain;
+   padding: 0px;
+}
+.rightnavi{/*formats the right navigation bar*/
+   width: 130px;
+   position: fixed;
+   top: 50%;
+   -ms-transform: translate(-10%, -50%);
+   transform: translate(-10%,-50%);
+   left: 100%;
+   background-color: RGB(143, 227, 129);
+   overflow-x: hidden;
+   transition: transform 1s;
+}
+.rightnavi:hover{
+   -ms-transform: translate(-100%,-50%);
+   transform: translate(-100%,-50%);
+}
+.rightnavi a img{
+   padding: 10px 0px 10px 0px;
+   clear: both;
+   width: 130px;
+   border-radius:50% 50% 50% 50%;
+   width: 75px;
+   height:75px;
+   margin: 0 auto;
+   display: block;
+}
+.footer{/*basic footer formatting*/
+   background-color: RGB(0, 0, 0);
+   width: 100%;
+   height: 100%;
+   position: relative;
+   top: 50px;
+   color: whitesmoke;
+}
+#leftfooter{/*separates the left side of the footer*/
+   float: left;
+   width: 50%;
+}
+#rightfooter::after{/*separates the right side of the footer*/
+   content: "";
+   clear: both;
+   display: table;
+   width: 50%;
+}
+.footer p,h2{
+   padding-top: 4px;
+}
+.homebox{/* box size for the homepage*/
+   background-color: RGB(143, 227, 129);
+   height: 200px;
+   width: 866px;
+   border: 3px solid black;
+   margin: 0 auto;
+   padding: 0px;
+}
+.navi{ /*for the hyperlinks to different parts of the docu*/
+   height: 16px;
+   width: 24%;
+   margin: 0px;
+   text-align: center;
+   display: inline-table;
+}
+.iframe{/*size of the iframe itself*/
+   height: 200px;
+   width: 866px;
+   border: 0px;
+}
+#tolkien{
+   float: left;
+   height: 200px;
+}
+.navibox{ /*for the navigation in content docus*/
+   background-color: RGB(143, 227, 129);
+   width: 60%;
+   border: 3px solid black;
+   margin: 0 auto;
+   padding: 0px;
+}
+.lower{ /*to lower elements*/
+   position: relative;
+   top: 50px;
+}
+.lowest{ /*to lower elements even more*/
+   position: relative;
+   top: 100px;
+}
+.about{ /*formatting for about the author*/
+   text-align: center;
+   font-family: Arial, sans-serif;
+   margin-right: 50px;
+   margin-left: 203px;
+}
+.container{/*formatting for the main box of the content pages*/
+   background-color: whitesmoke;
+   height: auto;
+   width: 60%;
+   margin: 0 auto;
+   border: 3px solid black;
+}
+.center{ /*center text*/
+   text-align: center;
+}
+.link{ /*to make links seem like normal words*/
+   text-decoration: none;
+   color: black;
+}
+.contentlogo{/*to position the logo of the page right below the banner*/
+   position: relative;
+   bottom: 75px;
+   border-radius:50% 50% 50% 50%;
+   width: 75px;
+   height:75px;
+   border: 2px inset black;
+}
+.container p{
+   padding: 20px;
+}
+.clearfix::after {/*to make a specific block be beside an image*/
+   content: "";
+   clear: both;
+   display: table;
+}
+.video{/*embedded videos*/
+   width: 60%;
+   height: 488px;
+   margin:  0 auto;
+   display: block;
+}
+.youtube{/*youtuber sprite*/
+   background: url('../images/sprites.png') no-repeat -210px -110px;
+   width: 100px;
+   height: 100px;
+}
+.youtube:hover{/*greyscale youtube sprite*/
+   background: url('../images/sprites.png') no-repeat -210px 0;
+}
+.twitter{/*twitter sprite*/
+   background: url('../images/sprites.png') no-repeat -105px -110px;
+   width: 100px;
+   height: 100px;
+}
+.twitter:hover{/*greyscale twitter sprite*/
+   background: url('../images/sprites.png') no-repeat -105px 0;
+}
